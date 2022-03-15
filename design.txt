@@ -1,0 +1,46 @@
+Title: Flatmates Bill
+Description: An app that gest as input the amount of a bill for a particular period and
+the day that each of the flatmates stayed in the house for that period
+and returns how much each flatmate has to pay. It also generates a PDF report
+stating the names of the flatmates, the period, and how much each of them hat to pay.
+
+Objects: 
+    Bill:
+        amount
+        period
+    Flatmate:
+        name
+        days_in_house
+        pays(bill,flatmate)
+    PdfReport:
+        filename
+        generate(flatmate1, flatmate2, bill)
+
+Create virtual environment
+python3 -m venv /Users/alonsovn/Documents/AVN/Development/udemy/flatmates_bill/venv
+
+Commands:
+show conda config values:
+    conda config --show 
+
+install packages
+conda install --file requirements.txt
+
+Pip 
+pip install -r requirements.txt
+
+Create venv
+$ python -m venv [directory]
+
+Activate env
+$ source myvenv/bin/activate
+
+
+    conda
+Create env
+conda create --name myenv
+Activate the env
+conda activate myenv
+
+Update conda:
+    conda update -n base -c defaults conda
