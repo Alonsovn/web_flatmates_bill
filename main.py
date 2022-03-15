@@ -36,8 +36,6 @@ class BillForm(Form):
     button = SubmitField("Calculate")
 
 
-
-
 app.add_url_rule('/', view_func=HomePage.as_view('home_page'))
 app.add_url_rule('/bill', view_func=BillFormPage.as_view('bill_form_page'))
 
